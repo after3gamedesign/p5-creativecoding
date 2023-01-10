@@ -1,0 +1,7 @@
+s0.initVideo("https://media3.giphy.com/media/Hw0wIr1YL75VC/giphy.mp4")
+s1.initVideo("https://media2.giphy.com/media/ztpMY1t5VYWlO/giphy.mp4")
+s2.initVideo("https://media2.giphy.com/media/YmZOBDYBcmWK4/giphy.mp4")
+src(s0).mask(gradient([1, 2, 4, 8])).out(o0)
+src(s1).mask(voronoi(20, 10)).out(o1)
+src(s2).mask(osc(10, 0, 0).modulate(10)).out(o2)
+render()
